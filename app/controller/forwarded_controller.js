@@ -1,21 +1,13 @@
-/*
- * @Author: liuqi 
- * @Date: 2020-05-28
- * @Description: ice 接口转发。
- */
 const iceGridInstanceName = "DRUG";
 const iceGridInstanceNameTest = "ERP"; 
-const SERVER_CONFIG ="ERP/Locator:tcp -h 47.106.100.121 -p 5061;DRUG/Locator:tcp -h reg.onekdrug.com -p 4061";
-// const SERVER_CONFIG ="ERP/Locator:tcp -h 114.115.168.87 -p 5061;DRUG/Locator:tcp -h 114.115.168.87 -p 4061";
+const SERVER_CONFIG ="ERP/Locator:tcp -h xxx -p 5061;DRUG/Locator:tcp -h xxx -p 4061";
+// const SERVER_CONFIG ="ERP/Locator:tcp -h xxx -p 5061;DRUG/Locator:tcp -h xxx -p 4061";
 
-const serverIpHistory = "47.106.100.121";
+const serverIpHistory = "xxx";
 
 const serverPortHistory = 4061;
 const Ice = require("ice").Ice;
 const inf = require("../../iceInterfaces").inf;
-
-//
-//
 
 
 let communication_map = {}
